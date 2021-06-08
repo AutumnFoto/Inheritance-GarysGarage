@@ -18,20 +18,40 @@ namespace Garage
             MyCessna.MaximumOccupancy = 4;
             MyCessna.FuelCapacity = 20;
 
+            // invoke methods
+            MyCessna.Drive();
+            MyCessna.Turn("left");
+            MyCessna.Stop();
+            Console.WriteLine();
+
             MyRam.MainColor = "Bright Blue";
             MyRam.MaximumOccupancy = 2;
             MyRam.FuelCapacity = 18.1;
 
+            MyRam.Drive();
+            MyRam.Turn("right");
+            MyRam.Stop();
+            Console.WriteLine();
+
             MyTesla.MainColor = "Crimson Red";
             MyTesla.MaximumOccupancy = 5;
             MyTesla.BatteryKWh = 35.4;
+
+            MyTesla.Drive();
+            MyTesla.Turn("left");
+            MyTesla.Stop();
+            Console.WriteLine();
+
 
 
             MyZero.MainColor = "White";
             MyZero.MaximumOccupancy = 4;
             MyZero.BatteryKWh = 25.9;
 
-
+            MyZero.Drive();
+            MyZero.Turn("right");
+            MyZero.Stop();
+            Console.WriteLine();
         }
     }
 }
