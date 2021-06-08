@@ -13,7 +13,15 @@ namespace Garage
 
         public override void Drive()
         {
-            Console.WriteLine("Zoooooom!");
+            Console.WriteLine($"The {this.MainColor} Cessna drives by");
+        }
+        public override void Turn(string direction)
+        {
+            Console.WriteLine($"The Cessna drives to the {direction}.");
+        }
+        public override void Stop()
+        {
+            Console.WriteLine("The Cessna stops.");
         }
     }
 }
